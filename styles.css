@@ -148,19 +148,25 @@ sup {
     background-color: var(--page-background-color);
 }
 
+@media only screen and (min-width: 1070px) {
+    .paperPage {
+        border-radius: 5px;
+        outline-color: var(--border-color); 
+        outline-width: 1px;
+        outline-style: solid;
+    }
+  }
+
 .paperPage {
     width: 1000px; 
     padding: 35px; 
     margin: 20px auto 20px auto;
-    border-radius: 5px;
     background-color:var(--body-background-color);
 
     /* border: var(--border-color);  */
     /* border-style: solid; */
     /* border-width: 1px; */
-    outline-color: var(--border-color); 
-    outline-width: 1px;
-    outline-style: solid;
+    
 }
 
 .paperPageContent {
