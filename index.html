@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<meta name="generator" content="Hugo 0.121.0">
+	<meta name="generator" content="Hugo 0.122.0">
     <meta charset="utf-8">
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon/favicon-32x32.png">
@@ -18,6 +18,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/700-italic.css">
     
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            
+            
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+            ],
+            
+            throwOnError : false
+        });
+    });
+</script>
     
     <link rel="stylesheet" href="/styles.css">
     <script src="/script.js"></script>
@@ -32,23 +55,27 @@
             
             <div style="text-align: left;"> 
                 
-                <div style="display: flex; flex-wrap: wrap; gap: 30px;">
-
-                    <img id="meimage" style="object-fit: cover; flex: 2 0 0px; object-position: 50% 75%; min-width: 130px; max-height: 230px; width: 100%;">
-                    
+                <div>
+                    <img id="meimage">
                     <div class="normaltext" style="flex-grow: 1; ">
                         <div style="display: flex; grid-gap: 0px;">
-                            <h1 class="headline" style="margin-top: 0px; margin-bottom: 0px;">Lukas Lipp</h1>
-                            <a href="https://twitter.com/lukas_lipp/" target="_blank">
-                                <div class="twitterButton" style="margin-left:10px;background: url(/icons/twitter/blue.svg) no-repeat center/90%;
-                                width: 35px; height: 35px;"></div> 
-                            </a>
-                            <a href="https://github.com/fknfilewalker/" target="_blank">
-                                <div class="githubButton" style="background: url(/icons/github/light.svg) no-repeat center/90%;
-                                width: 35px; height: 35px;"></div> 
-                            </a>
+                            
+                            <div>
+                                <div style="display: flex; grid-gap: 0px;">
+                                    <h1 class="headline" style="margin-top: 0px; margin-bottom: 0px;">Lukas Lipp</h1>
+                                    <a href="https://twitter.com/lukas_lipp/" target="_blank">
+                                        <div class="twitterButton" style="margin-left:10px;background: url(/icons/twitter/blue.svg) no-repeat center/90%;
+                                        width: 35px; height: 35px;"></div> 
+                                    </a>
+                                    <a href="https://github.com/fknfilewalker/" target="_blank">
+                                        <div class="githubButton" style="background: url(/icons/github/light.svg) no-repeat center/90%;
+                                        width: 35px; height: 35px;"></div> 
+                                    </a>
+                                </div>
+                                <p style="margin-bottom: 5px !important;">Ph.D. Candidate at</p>
+                            </div>
+                            
                         </div>
-                        <p>Ph.D. Candidate at</p>
                         
                         <p>
                             <a href="https://www.cg.tuwien.ac.at/" target="_blank">Institute of Visual Computing & Human-Centered Technology</a>

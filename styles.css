@@ -8,7 +8,7 @@
     --theme-icon-hover: 0%;
     --theme-icon: url(/icons/sun-solid.svg);
     --border-color: #d5d5d5;
-    --me-image: url(/images/luki_light.jpg);
+    --me-image: url(/images/luki.jpeg);
 }
 
 html[theme-style='light'] {
@@ -19,7 +19,7 @@ html[theme-style='light'] {
     --theme-icon-normal: 50%;
     --theme-icon-hover: 0%;
     --border-color: #d5d5d5;
-    --me-image: url(/images/luki_light.jpg);
+    --me-image: url(/images/luki.jpeg);
 }
 
 html[theme-style='dark'] {
@@ -30,7 +30,7 @@ html[theme-style='dark'] {
     --theme-icon-normal: 50%;
     --theme-icon-hover: 100%;
     --border-color: #3d3d40;
-    --me-image: url(/images/luki_dark.jpg);
+    --me-image: url(/images/luki.jpeg);
 }
 
 html[theme-mode='light'] {
@@ -239,13 +239,25 @@ div.highlight > pre {
 }
 
 #meimage {
+    margin: -10px 20px auto auto;
+    /* object-fit: cover;  */
+    flex: 2 0 0px; 
+    object-position: 10% 15%; 
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    width: 10%;
+    height: 10%;
+
     padding: 0pt;
     /* margin-right: 30pt; */
     float: left; 
     display: inline;
     content: var(--me-image);
     border-style: solid;
-    border-width: 1px;
-    border-radius: 4px;
+    border-width: 4px;
+    /* border-radius: 4px; */
+    border-radius: 50% 50%;
     border-color: var(--border-color);
 }
