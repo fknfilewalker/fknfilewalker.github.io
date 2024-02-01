@@ -243,7 +243,7 @@ div.highlight > pre {
 }
 
 #meimage {
-    margin: -9px 20px auto auto;
+    margin: -9px 20px auto 8px;
     /* object-fit: cover;  */
     flex: 2 0 0px; 
     object-position: 10% 15%; 
