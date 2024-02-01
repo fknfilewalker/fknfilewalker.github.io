@@ -91,7 +91,6 @@ a:visited {
     
     filter: invert(var(--theme-icon-normal));
     -webkit-filter: invert(var(--theme-icon-normal));
-    background: url(/icons/twitter/blue.svg) no-repeat center/90%;
 }
 
 .githubButton {
@@ -100,7 +99,6 @@ a:visited {
     
     filter: invert(var(--theme-icon-normal));
     -webkit-filter: invert(var(--theme-icon-normal));
-    background: url(/icons/twitter/blue.svg) no-repeat center/90%;
 }
 
 @media (hover: hover) {
@@ -114,8 +112,8 @@ a:visited {
         -webkit-filter: invert(var(--theme-icon-hover));
     }
     .twitterButton:hover {
-        filter: invert(var(--theme-icon-hover));
-        -webkit-filter: invert(var(--theme-icon-hover));
+        filter: invert(0%);
+        -webkit-filter: invert(0%);
     }
     .githubButton:hover {
         filter: invert(var(--theme-icon-hover));
@@ -245,7 +243,7 @@ div.highlight > pre {
 }
 
 #meimage {
-    margin: -10px 20px auto auto;
+    margin: -9px 20px auto auto;
     /* object-fit: cover;  */
     flex: 2 0 0px; 
     object-position: 10% 15%; 
@@ -262,8 +260,7 @@ div.highlight > pre {
     display: inline;
     content: var(--me-image);
     border-style: solid;
-    border-width: 4px;
-    /* border-radius: 4px; */
+    border-width: 3px;
     border-radius: 50% 50%;
     border-color: var(--border-color);
 }
