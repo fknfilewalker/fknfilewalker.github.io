@@ -188,8 +188,15 @@ div.highlight > pre {
     font-family: 'Lato', Verdana, Helvetica, sans-serif; 
     font-size: 22pt;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-top: 10px; 
+    color: var(--text-color);
+}
+
+.associationtext {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+    font-size: 16px;
+    font-weight: 400;
     color: var(--text-color);
 }
 
