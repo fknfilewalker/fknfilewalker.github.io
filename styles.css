@@ -186,11 +186,14 @@ div.highlight > pre {
 
 .headline {
     font-family: 'Lato', Verdana, Helvetica, sans-serif; 
-    font-size: 22pt;
+    font-size: 20pt;
     font-weight: bold;
     margin-bottom: 25px;
     margin-top: 10px; 
     color: var(--text-color);
+}
+h2 {
+    font-size: 18pt;
 }
 
 .associationtext {
