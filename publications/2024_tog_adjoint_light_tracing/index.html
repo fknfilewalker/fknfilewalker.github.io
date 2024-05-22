@@ -157,6 +157,19 @@ height: auto;"/>
 <p><em>Optimizing lighting design parameters for a large office scene with our view-independent differentiable light-tracing method: starting from an initial lighting setup <strong>(a)</strong> and a given ground-truth illumination target on the scene geometry, we perform gradient-based optimization, which closely recovers the ground truth in our solution <strong>(c)</strong>. The close-up views <strong>(b)</strong> show the difference to the target before and after optimization (left and right columns respectively).</em></p>
 <h2 id="abstract">Abstract</h2>
 <p>Differentiable rendering methods promise the ability to optimize various parameters of 3d scenes to achieve a desired result. However, lighting design has so far received little attention in this field. In this paper, we introduce a method that enables continuous optimization of the arrangement of luminaires in a 3d scene via differentiable light tracing. Our experiments show two major issues when attempting to apply existing methods from differentiable path tracing to this problem: first, many rendering methods produce images, which restricts the ability of a designer to define lighting objectives to image space. Second, most previous methods are designed for scene geometry or material optimization and have not been extensively tested for the case of optimizing light sources. Currently available differentiable ray-tracing methods do not provide satisfactory performance, even on fairly basic test cases in our experience. In this paper, we propose a novel adjoint light tracing method that overcomes these challenges and enables gradient-based lighting design optimization in a view-independent (camera-free) way. Thus, we allow the user to paint illumination targets directly onto the 3d scene or use existing baked illumination data (e.g., light maps). Using modern ray-tracing hardware, we achieve interactive performance. We find light tracing advantageous over path tracing in this setting, as it naturally handles irregular geometry, resulting in less noise and improved optimization convergence. We compare our adjoint gradients to state-of-the-art image-based differentiable rendering methods. We also demonstrate that our gradient data works with various common optimization algorithms, providing good convergence behaviour. Qualitative comparisons with real-world scenes underline the practical applicability of our method.</p>
+<h2 id="results">Results</h2>
+<div style="margin-bottom: 5px;">
+<img src="quake3_example.webp" alt="Teaser" style="max-width: 100%;
+height: auto;"/>
+<div style="display: flex; justify-content: space-around;">
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(a) Optimization</p>
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(b) Albedo / Lightmaps Only</p>
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(c) Albedo x Lightmaps</p>
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(d) Converted Target</p>
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(e) Relighted Result</p>
+</div>
+</div>
+<p><em>Alternative Figure 18 showing the reconstruction of the original baked lighting using our method with scenes from the game <a href="https://en.wikipedia.org/wiki/Quake_III_Arena">Quake III Arena</a></em></p>
 <h3 id="text-citation">Text citation</h3>
 <div class="citebox">
 <p class="smalltext" style="margin: 0px; text-align: left;">
