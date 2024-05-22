@@ -351,15 +351,15 @@ h3 {
 .resource-button {
     background-color: var(--body-background-color);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 16px;
     /* box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0; */
-    box-sizing: border-box;
+    box-sizing: inherit;
     cursor: pointer;
     display: inline-block;
     font-family: 'Lato', Verdana, Helvetica, sans-serif; 
     font-size: 16px;
     
-    height: 34px;
+    height: 28px;
     padding: 2px 19px 2px 19px;
     text-decoration: none;
     user-select: none;
