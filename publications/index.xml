@@ -16,6 +16,13 @@
       <description>A paper about inverse thermal rendering.</description>
     </item>
     <item>
+      <title>Single-Exemplar Lighting Style Transfer via Emissive Texture Synthesis and Optimization</title>
+      <link>http://fknfilewalker.github.io/publications/2025_grapp_light_transfer/</link>
+      <pubDate>Sat, 25 Jan 2025 15:28:51 +0200</pubDate>
+      <guid>http://fknfilewalker.github.io/publications/2025_grapp_light_transfer/</guid>
+      <description>A paper about lighting style transfer.</description>
+    </item>
+    <item>
       <title>View-Independent Adjoint Light Tracing for Lighting Design Optimization</title>
       <link>http://fknfilewalker.github.io/publications/2024_tog_adjoint_light_tracing/</link>
       <pubDate>Mon, 25 Mar 2024 15:28:51 +0200</pubDate>
