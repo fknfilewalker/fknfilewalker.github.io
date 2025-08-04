@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Lukas Lipp</title>
+    <link>http://fknfilewalker.github.io/publications/</link>
+    <description>Recent content in Publications on Lukas Lipp</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Feb 2025 15:28:51 +0200</lastBuildDate>
+    <atom:link href="http://fknfilewalker.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inverse Simulation of Radiative Thermal Transport</title>
+      <link>http://fknfilewalker.github.io/publications/2025_eg_inverse_thermal/</link>
+      <pubDate>Tue, 25 Feb 2025 15:28:51 +0200</pubDate>
+      <guid>http://fknfilewalker.github.io/publications/2025_eg_inverse_thermal/</guid>
+      <description>A paper about inverse thermal rendering.</description>
+    </item>
+    <item>
+      <title>Single-Exemplar Lighting Style Transfer via Emissive Texture Synthesis and Optimization</title>
+      <link>http://fknfilewalker.github.io/publications/2025_grapp_light_transfer/</link>
+      <pubDate>Sat, 25 Jan 2025 15:28:51 +0200</pubDate>
+      <guid>http://fknfilewalker.github.io/publications/2025_grapp_light_transfer/</guid>
+      <description>A paper about lighting style transfer.</description>
+    </item>
+    <item>
+      <title>View-Independent Adjoint Light Tracing for Lighting Design Optimization</title>
+      <link>http://fknfilewalker.github.io/publications/2024_tog_adjoint_light_tracing/</link>
+      <pubDate>Mon, 25 Mar 2024 15:28:51 +0200</pubDate>
+      <guid>http://fknfilewalker.github.io/publications/2024_tog_adjoint_light_tracing/</guid>
+      <description>View-Independent Adjoint Light Tracing.</description>
+    </item>
+    <item>
+      <title>Fast Rendering of Parametric Objects on Modern GPUs</title>
+      <link>http://fknfilewalker.github.io/publications/2024_egpgv_implicit/</link>
+      <pubDate>Sun, 25 Feb 2024 15:28:51 +0200</pubDate>
+      <guid>http://fknfilewalker.github.io/publications/2024_egpgv_implicit/</guid>
+      <description>A paper about fast rendering of implicit functions.</description>
+    </item>
+    <item>
+      <title>Precomputed Radiative Heat Transport for Efficient Thermal Simulation</title>
+      <link>http://fknfilewalker.github.io/publications/2023_pg_thermal/</link>
+      <pubDate>Sat, 25 Feb 2023 15:28:51 +0200</pubDate>
+      <guid>http://fknfilewalker.github.io/publications/2023_pg_thermal/</guid>
+      <description>A paper about thermal rendering.</description>
+    </item>
+  </channel>
+</rss>

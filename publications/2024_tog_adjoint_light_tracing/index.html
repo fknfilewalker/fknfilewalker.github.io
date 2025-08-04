@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/icons/favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width,initial-scale=0.70,maximum-scale=1,user-scalable=no"/>
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/100.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/300.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/400.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/700.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/100-italic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/300-italic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/400-italic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/700-italic.css">
+    
+    
+    
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"></script>
+
+    <meta name="theme-color" content="#e3e5e8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="darkreader-lock"> 
+    
+    <title>View-Independent Adjoint Light Tracing for Lighting Design Optimization</title>
+</head><body class="pageBody">
+        <div class="paperPage">
+            <a href="/" style="text-decoration: none; color:black;">
+                <div class="homeButton"></div> 
+            </a>
+            <div class="modeButton" onclick="changeTheme()"></div>
+            
+            <div style="text-align: center;">
+                
+                <h1 class="headline" style="text-align: center;">View-Independent Adjoint Light Tracing for Lighting Design Optimization</h1>
+                
+                <div class="normaltext" style="display: flex; justify-content: center; flex-wrap: wrap; row-gap: 0px; column-gap: 40px;">
+                    
+                    
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  href="https://fknfilewalker.github.io/"  target="_blank">
+                            Lukas Lipp</a><sup>1</sup>
+                        </div>
+                        
+                        
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  target="_blank">
+                            David Hahn</a><sup>1</sup>
+                        </div>
+                        
+                        
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  target="_blank">
+                            Pierre Ecormier-Nocca</a><sup>1</sup>
+                        </div>
+                        
+                        
+                            <div style="flex-basis: 100%; height: 0; display: block;"></div>
+                        
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  target="_blank">
+                            Florian Rist</a><sup>1,2</sup>
+                        </div>
+                        
+                        
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  target="_blank">
+                            Michael Wimmer</a><sup>1</sup>
+                        </div>
+                        
+                        
+                    
+                </div>
+                    
+                <div class="associationtext" style="padding-top: 5px; padding-bottom: 15px;">
+                    
+                    
+                    
+                        
+                        <sup>1</sup><a  href="https://www.cg.tuwien.ac.at/"  target="_blank">TU Wien</a><a>, </a>
+                        
+                        
+                    
+                        
+                        <sup>2</sup><a  href="https://www.kaust.edu.sa/en/"  target="_blank">KAUST</a><a> </a>
+                        
+                        
+                    
+                </div>
+                <div class="conftext">
+                    
+                    <a  target="_blank">ACM Transactions on Graphics (with presentation at SIGGRAPH 2024)</a>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="normaltext" style="display: flex; justify-content: center; flex-wrap: wrap; row-gap: 20px; column-gap: 30px; margin-top: 30px;">
+                
+                    
+                    
+                        <a href="https://dl.acm.org/doi/10.1145/3662180" target="_blank" style="text-decoration: none;">
+                            <div class="resource-button" style="display: flex;">
+                                
+                                    <img  class="iconMode"  src="/icons/article.svg" style="height: 18px; margin: auto 8px auto auto;"></img>
+                                
+                                <div style="margin: auto;">Paper</div>
+                            </div> 
+                        </a>
+                    
+                        <a href="https://github.com/fknfilewalker/adjoint-light-tracing" target="_blank" style="text-decoration: none;">
+                            <div class="resource-button" style="display: flex;">
+                                
+                                    <img  class="iconMode"  src="/icons/github/light.svg" style="height: 18px; margin: auto 8px auto auto;"></img>
+                                
+                                <div style="margin: auto;">Code (coming soon)</div>
+                            </div> 
+                        </a>
+                    
+                        <a href="https://arxiv.org/abs/2310.02043" target="_blank" style="text-decoration: none;">
+                            <div class="resource-button" style="display: flex;">
+                                
+                                    <img  src="/icons/arxiv.svg" style="height: 18px; margin: auto 8px auto auto;"></img>
+                                
+                                <div style="margin: auto;">arXiv</div>
+                            </div> 
+                        </a>
+                    
+                
+            </div>
+
+            <div class="paperPageContent">
+                <div style="margin-bottom: 5px;">
+<img src="teaser_large.webp" alt="Teaser" style="max-width: 100%;
+height: auto;"/>
+<div style="display: flex; justify-content: space-around;">
+<p style="margin: 0px; font-size: min(2vw,20px); text-align: center; flex: 2 1 0;">(a) Initial</p>
+<p style="margin: 0px; font-size: min(2vw,20px); text-align: center; flex: 1 1 0;">(b) Difference</p>
+<p style="margin: 0px; font-size: min(2vw,20px); text-align: center; flex: 2 1 0;">(c) Result</p>
+</div>
+</div>
+<p><em>Optimizing lighting design parameters for a large office scene with our view-independent differentiable light-tracing method: starting from an initial lighting setup <strong>(a)</strong> and a given ground-truth illumination target on the scene geometry, we perform gradient-based optimization, which closely recovers the ground truth in our solution <strong>(c)</strong>. The close-up views <strong>(b)</strong> show the difference to the target before and after optimization (left and right columns respectively).</em></p>
+<h2 id="abstract">Abstract</h2>
+<p>Differentiable rendering methods promise the ability to optimize various parameters of 3d scenes to achieve a desired result. However, lighting design has so far received little attention in this field. In this paper, we introduce a method that enables continuous optimization of the arrangement of luminaires in a 3d scene via differentiable light tracing. Our experiments show two major issues when attempting to apply existing methods from differentiable path tracing to this problem: first, many rendering methods produce images, which restricts the ability of a designer to define lighting objectives to image space. Second, most previous methods are designed for scene geometry or material optimization and have not been extensively tested for the case of optimizing light sources. Currently available differentiable ray-tracing methods do not provide satisfactory performance, even on fairly basic test cases in our experience. In this paper, we propose a novel adjoint light tracing method that overcomes these challenges and enables gradient-based lighting design optimization in a view-independent (camera-free) way. Thus, we allow the user to paint illumination targets directly onto the 3d scene or use existing baked illumination data (e.g., light maps). Using modern ray-tracing hardware, we achieve interactive performance. We find light tracing advantageous over path tracing in this setting, as it naturally handles irregular geometry, resulting in less noise and improved optimization convergence. We compare our adjoint gradients to state-of-the-art image-based differentiable rendering methods. We also demonstrate that our gradient data works with various common optimization algorithms, providing good convergence behaviour. Qualitative comparisons with real-world scenes underline the practical applicability of our method.</p>
+<h2 id="results">Results</h2>
+<div style="margin-bottom: 5px;">
+<img src="quake3_example.webp" alt="Teaser" style="max-width: 100%;
+height: auto;"/>
+<div style="display: flex; justify-content: space-around;">
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(a) Optimization</p>
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(b) Albedo / Lightmaps Only</p>
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(c) Albedo x Lightmaps</p>
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(d) Converted Target</p>
+<p style="margin: 0px; font-size: min(1.5vw,16px); text-align: center; flex: 1 1 0;">(e) Relighted Result</p>
+</div>
+</div>
+<p><em>Alternative Figure 18 showing the reconstruction of the original baked lighting using our method with scenes from the game <a href="https://en.wikipedia.org/wiki/Quake_III_Arena">Quake III Arena</a>.</em></p>
+<h3 id="text-citation">Text citation</h3>
+<div class="citebox">
+<p class="smalltext" style="margin: 0px; text-align: left; color: var(--text-color) !important;">
+Lukas Lipp, David Hahn, Pierre Ecormier-Nocca, Florian Rist, and Michael Wimmer. 2024. View-Independent Adjoint Light Tracing for Lighting Design Optimization. ACM Trans. Graph. 43, 3, Article 35 (June 2024), 16 pages. https://doi.org/10.1145/3662180
+</p>
+</div>
+<h3 id="bibtex">BibTeX</h3>
+<div class="citebox">
+<pre class="smalltext" style="margin: 0px; text-align: left; white-space: pre-wrap;  color: var(--text-color) !important;">
+@article{Lipp2024AdjointLightTracing,
+            author = {Lipp, Lukas and Hahn, David and Ecormier-Nocca, Pierre and Rist, Florian and Wimmer, Michael},
+            journal = {ACM Transactions on Graphics},
+            volume = {43},
+            number = {3},
+            year = {2024},
+            month = {may},
+            doi = {10.1145/3662180}
+}
+</pre>
+</div>
+
+            </div>
+        </div>
+    </body>
+</html>

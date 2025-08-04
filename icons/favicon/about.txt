@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Geo
+- Font Author: Copyright (c) 2000-2010, Ben Weiner (ben@readingtype.org.uk), with Reserved Font Name Geo.
+- Font Source: http://fonts.gstatic.com/s/geo/v19/CSRz4zRZlufVL3BmQjlCbQ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

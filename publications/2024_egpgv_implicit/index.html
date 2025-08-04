@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/icons/favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width,initial-scale=0.70,maximum-scale=1,user-scalable=no"/>
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/100.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/300.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/400.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/700.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/100-italic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/300-italic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/400-italic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/700-italic.css">
+    
+    
+    
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"></script>
+
+    <meta name="theme-color" content="#e3e5e8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="darkreader-lock"> 
+    
+    <title>Fast Rendering of Parametric Objects on Modern GPUs</title>
+</head><body class="pageBody">
+        <div class="paperPage">
+            <a href="/" style="text-decoration: none; color:black;">
+                <div class="homeButton"></div> 
+            </a>
+            <div class="modeButton" onclick="changeTheme()"></div>
+            
+            <div style="text-align: center;">
+                
+                <h1 class="headline" style="text-align: center;">Fast Rendering of Parametric Objects on Modern GPUs</h1>
+                
+                <div class="normaltext" style="display: flex; justify-content: center; flex-wrap: wrap; row-gap: 0px; column-gap: 40px;">
+                    
+                    
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  href="https://johannesugb.github.io/"  target="_blank">
+                            Johannes Unterguggenberger</a>
+                        </div>
+                        
+                        
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  href="https://fknfilewalker.github.io/"  target="_blank">
+                            Lukas Lipp</a>
+                        </div>
+                        
+                        
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  target="_blank">
+                            Michael Wimmer</a>
+                        </div>
+                        
+                        
+                            <div style="flex-basis: 100%; height: 0; display: block;"></div>
+                        
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  href="https://snosixtyboo.github.io/"  target="_blank">
+                            Bernhard Kerbl</a>
+                        </div>
+                        
+                        
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  target="_blank">
+                            Markus Schütz</a>
+                        </div>
+                        
+                        
+                    
+                </div>
+                    
+                <div class="associationtext" style="padding-top: 5px; padding-bottom: 15px;">
+                    
+                    
+                    
+                        
+                        <a  href="https://www.tuwien.at/en/"  target="_blank">TU Wien</a><a> </a>
+                        
+                        
+                    
+                </div>
+                <div class="conftext">
+                    
+                    <a  href="https://www.egpgv.org/2024/"  target="_blank">Eurographics Symposium on Parallel Graphics and Visualization 2024</a>
+                    <p class="smalltext" style="margin: 20px 0px 0px 0px; color:#e74d3c !important;">🏆 Best Paper Award</p>
+                </div>
+            </div>
+            
+            
+            <div class="normaltext" style="display: flex; justify-content: center; flex-wrap: wrap; row-gap: 20px; column-gap: 30px; margin-top: 30px;">
+                
+                    
+                    
+                        <a href="https://diglib.eg.org/items/3aaeeb7b-4028-43bf-a137-8a80b8cff6cf" target="_blank" style="text-decoration: none;">
+                            <div class="resource-button" style="display: flex;">
+                                
+                                    <img  class="iconMode"  src="/icons/article.svg" style="height: 18px; margin: auto 8px auto auto;"></img>
+                                
+                                <div style="margin: auto;">Paper</div>
+                            </div> 
+                        </a>
+                    
+                        <a href="https://github.com/cg-tuwien/FastRenderingOfParametricObjects" target="_blank" style="text-decoration: none;">
+                            <div class="resource-button" style="display: flex;">
+                                
+                                    <img  class="iconMode"  src="/icons/github/light.svg" style="height: 18px; margin: auto 8px auto auto;"></img>
+                                
+                                <div style="margin: auto;">Code</div>
+                            </div> 
+                        </a>
+                    
+                
+            </div>
+
+            <div class="paperPageContent">
+                <h3 id="abstract">Abstract</h3>
+<p>Parametric functions are an extremely efficient representation for 3D geometry, capable of compactly modelling highly complex objects. Once specified, parametric 3D objects allow for visualization at arbitrary levels of detail, at no additional memory cost, limited only by the amount of evaluated samples. However, mapping the sample evaluation to the hardware rendering pipelines of modern graphics processing units (GPUs) is not trivial. This has given rise to several specialized solutions, each targeting interactive rendering of a constrained set of parametric functions. In this paper, we propose a general method for efficient rendering of parametrically defined 3D objects. Our solution is carefully designed around modern hardware architecture. Our method adaptively analyzes, allocates and evaluates parametric function samples to produce high-quality renderings. Geometric precision can be modulated from few pixels down to sub-pixel level, enabling real-time frame rates of several 100 frames per second (FPS) for various parametric functions. We propose a dedicated level-of-detail (LOD) stage, which outputs patches of similar geometric detail to a subsequent rendering stage that uses either a hardware tessellation-based approach or performs point-based softare rasterization. Our method requires neither preprocessing nor caching, and the proposed LOD mechanism is fast enough to run each frame. Hence, our approach also lends itself to animated parametric objects. We demonstrate the benefits of our method over a state-of-the-art spherical harmonics (SH) glyph rendering method, while showing its flexibility on a range of other demanding shapes.</p>
+<h3 id="bibtex">BibTeX</h3>
+<div class="citebox">
+<pre class="smalltext" style="margin: 0px; text-align: left; white-space: pre-wrap;  color: var(--text-color) !important;">
+@inproceedings{Unterguggenberger2024ParametricObjects,
+            booktitle = {Eurographics Symposium on Parallel Graphics and Visualization},
+            editor = {Reina, Guido and Rizzi, Silvio},
+            title = {{Fast Rendering of Parametric Objects on Modern GPUs}},
+            author = {Unterguggenberger, Johannes and Lipp, Lukas and Wimmer, Michael and Kerbl, Bernhard and Schütz, Markus},
+            year = {2024},
+            publisher = {The Eurographics Association},
+            ISSN = {1727-348X},
+            ISBN = {978-3-03868-243-1},
+            DOI = {10.2312/pgv.20241129}
+}
+</pre>
+</div>
+
+            </div>
+        </div>
+    </body>
+</html>

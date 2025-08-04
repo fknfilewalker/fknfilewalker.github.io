@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/icons/favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width,initial-scale=0.70,maximum-scale=1,user-scalable=no"/>
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/100.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/300.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/400.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/700.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/100-italic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/300-italic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/400-italic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/lato@4.5.9/700-italic.css">
+    
+    
+    
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"></script>
+
+    <meta name="theme-color" content="#e3e5e8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="darkreader-lock"> 
+    
+    <title>A Gentle Introduction to Vulkan for Rendering and Compute Workloads</title>
+</head><body class="pageBody">
+        <div class="paperPage">
+            <a href="/" style="text-decoration: none; color:black;">
+                <div class="homeButton"></div> 
+            </a>
+            <div class="modeButton" onclick="changeTheme()"></div>
+            
+            <div style="text-align: center;">
+                
+                <h1 class="headline" style="text-align: center;">A Gentle Introduction to Vulkan for Rendering and Compute Workloads</h1>
+                
+                <div class="normaltext" style="display: flex; justify-content: center; flex-wrap: wrap; row-gap: 0px; column-gap: 40px;">
+                    
+                    
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  href="https://fknfilewalker.github.io/"  target="_blank">
+                            Lukas Lipp</a><sup>1</sup>
+                        </div>
+                        
+                        
+                    
+                        
+                        <div style="margin-bottom: 15px;">
+                            <a  href="https://snosixtyboo.github.io/"  target="_blank">
+                            Bernhard Kerbl</a><sup>2</sup>
+                        </div>
+                        
+                        
+                    
+                </div>
+                    
+                <div class="associationtext" style="padding-top: 5px; padding-bottom: 15px;">
+                    
+                    
+                    
+                        
+                        <sup>1</sup><a  href="https://www.tuwien.at/en/"  target="_blank">TU Wien</a><a>, </a>
+                        
+                        
+                    
+                        
+                        <sup>2</sup><a  href="https://univ-cotedazur.fr/"  target="_blank">Université Côte d&#39;Azure</a><a> </a>
+                        
+                        
+                    
+                </div>
+                <div class="conftext">
+                    <a  href="https://www.highperformancegraphics.org/2023/program/#course/"  target="_blank">High Performance Graphics 2023 Course</a>
+                </div>
+
+            </div>
+
+            
+            <div class="normaltext" style="display: flex; justify-content: center; flex-wrap: wrap; row-gap: 20px; column-gap: 30px; margin-top: 30px;">
+                
+            </div>
+
+            <div class="paperPageContent">
+                <h2 id="abstract">Abstract</h2>
+<p>Take your first steps with the Vulkan API, a modern and open graphics API from the Khronos Group. This Tutorial covered the very basics but also more complex applications in the fields of real-time-rendering and GPGPU computing. No prior experience was required. This tutorial was presented in a lecture-only format and required no active coding by the participants. As optional homework, participants were invited to also try out the educational Vulkan framework which was used during the <a href="https://vulkan.org/events/vulkanised-2023">Vulkanised 2023</a> tutorial, as well as a separate suite of GPU compute coding tasks.</p>
+<h2 id="recording">Recording</h2>
+<iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/nD83r06b5NE" title="Vulkanised 2023 Tutorial: An Introduction to Vulkan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h3 id="notes-on-command-execution-order">Notes on command execution order</h3>
+<p>There has been some confusion about the order of execution of submitted commands during the HPG talk, so I want to add a bit of clarification here.</p>
+<p>As chapter &ldquo;3.2.1. Queue Operation&rdquo; of the <a href="https://registry.khronos.org/vulkan/specs/1.3/pdf/vkspec.pdf#page=187">Vulkan 1.3 specs</a> states &ldquo;The work involved in performing action commands is often allowed to overlap or to be reordered, but doing so must not alter the state to be used by each action command.&rdquo; This means Vulkan is allowed to reorder certain commands as long as the state is not altered. This is further explained in chapter &ldquo;7.2. Implicit Synchronization Guarantees&rdquo; which reads that there are action and state commands which can have different implicit synchronization guarantees.</p>
+<p>In short, commands can execute and finish out of order, but some commands have implicit synchronization guarantees e.g., state commands.</p>
+<h2 id="resources">Resources</h2>
+<p><a href="https://github.com/cg-tuwien/VulkanLaunchpad">&lt;/&gt; Vulkan Launchpad 🚀</a></p>
+<p><a href="https://github.com/cg-tuwien/VulkanLaunchpadStarter">&lt;/&gt; Vulkan Launchpad Starter 🚀📈</a></p>
+<p><a href="https://github.com/bkerbl/vulkan-compute-exercises">&lt;/&gt; Compute Exercises 🧮</a></p>
+
+            </div>
+        </div>
+    </body>
+</html>
