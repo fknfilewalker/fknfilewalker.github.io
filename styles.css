@@ -1,4 +1,3 @@
-
 :root {
     --page-background-color: rgb(227, 229, 232);
     --body-background-color: rgb(255, 255, 255);
@@ -12,7 +11,7 @@
     --theme-icon: url(/icons/sun-solid.svg);
     --border-color: #d5d5d5;
     --me-image: url(/images/luki.jpeg);
-    --button-hover: rgb(240,240,240);
+    --button-hover: rgb(240, 240, 240);
 }
 
 html[theme-style='light'] {
@@ -27,7 +26,7 @@ html[theme-style='light'] {
     --theme-icon-hover: 0%;
     --border-color: #d5d5d5;
     --me-image: url(/images/luki.jpeg);
-    --button-hover: rgb(240,240,240);
+    --button-hover: rgb(240, 240, 240);
 }
 
 html[theme-style='dark'] {
@@ -42,15 +41,17 @@ html[theme-style='dark'] {
     --theme-icon-hover: 100%;
     --border-color: #3d3d40;
     --me-image: url(/images/luki.jpeg);
-    --button-hover: rgb(40,40,40);
+    --button-hover: rgb(40, 40, 40);
 }
 
 html[theme-mode='light'] {
     --theme-icon: url(/icons/sun-light.svg);
 }
+
 html[theme-mode='dark'] {
     --theme-icon: url(/icons/moon-light.svg);
 }
+
 html[theme-mode='auto'] {
     --theme-icon: url(/icons/magic-light.svg);
 }
@@ -66,7 +67,7 @@ a:visited {
 }
 
 @media (hover: hover) {
-    a:hover[href]{
+    a:hover[href] {
         text-decoration: underline;
         color: var(--link-color);
     }
@@ -76,7 +77,7 @@ a:visited {
 .modeButton {
     width: 20px;
     height: 20px;
-    
+
     float: right;
     margin-top: -20px;
     filter: invert(var(--theme-icon-normal));
@@ -87,7 +88,7 @@ a:visited {
 .homeButton {
     width: 30px;
     height: 20px;
-    
+
     float: left;
     margin-top: -20px;
     filter: invert(var(--theme-icon-normal));
@@ -98,7 +99,7 @@ a:visited {
 .twitterButton {
     width: 50px;
     height: 50px;
-    
+
     filter: invert(var(--theme-icon-normal));
     -webkit-filter: invert(var(--theme-icon-normal));
 }
@@ -106,7 +107,15 @@ a:visited {
 .githubButton {
     width: 50px;
     height: 50px;
-    
+
+    filter: invert(var(--theme-icon-normal));
+    -webkit-filter: invert(var(--theme-icon-normal));
+}
+
+.blueskyButton {
+    width: 50px;
+    height: 50px;
+
     filter: invert(var(--theme-icon-normal));
     -webkit-filter: invert(var(--theme-icon-normal));
 }
@@ -122,23 +131,33 @@ a:visited {
         -webkit-filter: invert(var(--theme-icon-hover));
         cursor: pointer;
     }
+
     .homeButton:hover {
         filter: invert(var(--theme-icon-hover));
         -webkit-filter: invert(var(--theme-icon-hover));
     }
+
     .twitterButton:hover {
         filter: invert(0%);
         -webkit-filter: invert(0%);
     }
+
     .githubButton:hover {
         filter: invert(var(--theme-icon-hover));
         -webkit-filter: invert(var(--theme-icon-hover));
     }
+
+    .blueskyButton:hover {
+        filter: invert(0%);
+        -webkit-filter: invert(0%);
+    }
 }
+
 /* </buttons> */
 
 body {
-    font-family: 'Tangerine', serif; font-size: 30px;
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
 
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -157,14 +176,14 @@ sup {
 .pageBody {
     display: flex;
     margin: auto;
-    color: var(--text-color); 
+    color: var(--text-color);
     background-color: var(--page-background-color);
 }
 
 @media only screen and (min-width: 1140px) {
     .paperPage {
         border-radius: 5px;
-        outline-color: var(--border-color); 
+        outline-color: var(--border-color);
         outline-width: 1px;
         outline-style: solid;
     }
@@ -174,38 +193,44 @@ sup {
     .paperPage {
         padding: 35px 10px 35px 10px;
     }
+
     .modeButton {
         margin-right: 5px;
     }
+
     .homeButton {
         margin-left: 0px;
     }
+
     .headline {
         margin-left: 25px;
         margin-right: 25px;
     }
 }
+
 @media only screen and (min-width: 1070px) {
     .paperPage {
-        padding: 35px 35px 35px 35px; 
+        padding: 35px 35px 35px 35px;
     }
+
     .modeButton {
         margin-right: -20px;
     }
+
     .homeButton {
         margin-left: -25px;
     }
 }
 
 .paperPage {
-    width: 1070px; 
+    width: 1070px;
     margin: 20px auto 20px auto;
-    background-color:var(--body-background-color);
+    background-color: var(--body-background-color);
 
     /* border: var(--border-color);  */
     /* border-style: solid; */
     /* border-width: 1px; */
-    
+
 }
 
 .paperPageContent {
@@ -216,7 +241,7 @@ sup {
     line-height: 1.42857143;
 }
 
-div.highlight > pre {
+div.highlight>pre {
     padding: 16px;
     overflow: auto;
     font-size: 85%;
@@ -226,57 +251,59 @@ div.highlight > pre {
 }
 
 .headline {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 20pt;
     font-weight: var(--font-weight);
     margin-bottom: 25px;
-    margin-top: 10px; 
+    margin-top: 10px;
     color: var(--text-color);
 }
 
 .subheadline {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 20pt;
     font-weight: var(--font-weight);
     margin-bottom: 10px;
-    margin-top: 10px; 
+    margin-top: 10px;
     color: var(--text-color);
 }
 
 p {
     margin-top: 0px;
 }
+
 h2 {
     margin-bottom: 10px;
     font-size: 18pt;
 }
+
 h3 {
     margin-bottom: 10px;
 }
 
 .associationtext {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: var(--font-weight);
     color: var(--text-color);
 }
 
 .conftext {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 13pt;
     font-weight: var(--font-weight);
     color: var(--text-color);
 }
 
 .normaltext {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 16pt;
     font-weight: var(--font-weight);
     color: var(--text-color);
 }
 
 .smalltext {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 12pt;
     font-weight: var(--font-weight);
     color: var(--small-text-color) !important;
@@ -288,30 +315,35 @@ h3 {
     box-sizing: border-box;
     border: 1px solid transparent;
 }
+
 #publicationItem:hover {
     border: 1px solid var(--border-color);
     /* border-left: 1px solid; */
     /* border-right: 1px solid; */
     /* border-radius: 15px; */
 }
+
 /*** TALKS ***/
 #talkItem {
     display: flex;
     box-sizing: border-box;
     border: 1px solid transparent;
 }
+
 #talkItem:hover {
     border: 1px solid var(--border-color);
     /* border-left: 1px solid; */
     /* border-right: 1px solid; */
     /* border-radius: 15px; */
 }
+
 /*** Blog ***/
 #blogItem {
     display: flex;
     box-sizing: border-box;
     border: 1px solid transparent;
 }
+
 #blogItem:hover {
     border: 1px solid var(--border-color);
     /* border-left: 1px solid; */
@@ -322,8 +354,8 @@ h3 {
 #meimage {
     margin: auto 20px auto 8px;
     /* object-fit: cover;  */
-    flex: 2 0 0px; 
-    object-position: 10% 15%; 
+    flex: 2 0 0px;
+    object-position: 10% 15%;
     min-height: 100px;
     min-width: 100px;
     max-height: 100px;
@@ -333,7 +365,7 @@ h3 {
 
     padding: 0pt;
     /* margin-right: 30pt; */
-    float: left; 
+    float: left;
     display: inline;
     content: var(--me-image);
     border-style: solid;
@@ -359,9 +391,9 @@ h3 {
     box-sizing: inherit;
     cursor: pointer;
     display: inline-block;
-    font-family: 'Lato', Verdana, Helvetica, sans-serif; 
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 16px;
-    
+
     height: 28px;
     padding: 2px 19px 2px 19px;
     text-decoration: none;
@@ -370,10 +402,11 @@ h3 {
     touch-action: manipulation;
     color: var(--text-color);
 }
-  
+
 .resource-button:hover {
     background-color: var(--button-hover);
 }
+
 .resource-button:focus {
     border-color: var(--link-color);
     outline: 0;

@@ -1,9 +1,9 @@
 applyTheme();
 
 function toGiscusTheme(theme) {
-    if(theme === "auto") {
+    if (theme === "auto") {
         return (window.matchMedia("(prefers-color-scheme: dark)").matches ? "transparent_dark" : "light");
-    } else if(theme === "dark") {
+    } else if (theme === "dark") {
         return "transparent_dark";
     }
     return "light";
@@ -12,12 +12,12 @@ function toGiscusTheme(theme) {
 function applyTheme() {
     // check current theme
     var themeMode = localStorage.getItem('theme-mode');
-    if(themeMode === null) themeMode = "auto";
-    
+    if (themeMode === null) themeMode = "auto";
+
     var useTheme = "light";
-    if(themeMode === "auto") {
+    if (themeMode === "auto") {
         useTheme = (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    } else if(themeMode === "dark") {
+    } else if (themeMode === "dark") {
         useTheme = "dark";
     }
 
