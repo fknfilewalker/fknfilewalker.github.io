@@ -28,6 +28,13 @@
 				<description>A paper about triangles.</description>
 			</item>
 			<item>
+				<title>Deferred Software Rasterization for Efficient Real-time Hair Rendering</title>
+				<link>http://fknfilewalker.github.io/publications/2026_hpg_hair/</link>
+				<pubDate>Wed, 25 Feb 2026 15:28:51 +0200</pubDate>
+				<guid>http://fknfilewalker.github.io/publications/2026_hpg_hair/</guid>
+				<description>A paper about hair.</description>
+			</item>
+			<item>
 				<title>Real-Time Rendering Methods with Adaptive Levels of Detail for Fast Rendering of Parametric Objects on Modern GPUs</title>
 				<link>http://fknfilewalker.github.io/publications/2025_tvcg_implicit/</link>
 				<pubDate>Thu, 25 Dec 2025 15:28:51 +0200</pubDate>

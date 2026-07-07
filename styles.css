@@ -12,6 +12,7 @@
     --border-color: #d5d5d5;
     --me-image: url(/images/luki.jpeg);
     --button-hover: rgb(240, 240, 240);
+    --red-color: #e74d3c;
 }
 
 html[theme-style='light'] {
@@ -27,6 +28,7 @@ html[theme-style='light'] {
     --border-color: #d5d5d5;
     --me-image: url(/images/luki.jpeg);
     --button-hover: rgb(240, 240, 240);
+    --red-color: #e74d3c;
 }
 
 html[theme-style='dark'] {
@@ -42,6 +44,7 @@ html[theme-style='dark'] {
     --border-color: #3d3d40;
     --me-image: url(/images/luki.jpeg);
     --button-hover: rgb(40, 40, 40);
+    --red-color: #FF474C;
 }
 
 html[theme-mode='light'] {

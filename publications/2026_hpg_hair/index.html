@@ -26,7 +26,7 @@
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <meta name="darkreader-lock"> 
     
-    <title>CuRast: Cuda-Based Software Rasterization for Billions of Triangles</title>
+    <title>Deferred Software Rasterization for Efficient Real-time Hair Rendering</title>
 </head><body class="pageBody">
         <div class="paperPage">
             <a href="/" style="text-decoration: none; color:black;">
@@ -36,7 +36,7 @@
             
             <div style="text-align: center;">
                 
-                <h1 class="headline" style="text-align: center;">CuRast: Cuda-Based Software Rasterization for Billions of Triangles</h1>
+                <h1 class="headline" style="text-align: center;">Deferred Software Rasterization for Efficient Real-time Hair Rendering</h1>
                 
                 <div class="normaltext" style="display: flex; justify-content: center; flex-wrap: wrap; row-gap: 0px; column-gap: 40px;">
                     
@@ -44,16 +44,16 @@
                     
                         
                         <div style="margin-bottom: 15px;">
-                            <a  target="_blank">
-                            Markus Schütz</a>
+                            <a  href="https://fknfilewalker.github.io/"  target="_blank">
+                            Lukas Lipp</a>
                         </div>
                         
                         
                     
                         
                         <div style="margin-bottom: 15px;">
-                            <a  href="https://fknfilewalker.github.io/"  target="_blank">
-                            Lukas Lipp</a>
+                            <a  target="_blank">
+                            Adrian Jarabo</a>
                         </div>
                         
                         
@@ -63,7 +63,7 @@
                         
                         <div style="margin-bottom: 15px;">
                             <a  target="_blank">
-                            Elias Kristmann</a>
+                            Michael Wimmer</a>
                         </div>
                         
                         
@@ -71,7 +71,7 @@
                         
                         <div style="margin-bottom: 15px;">
                             <a  target="_blank">
-                            Michael Wimmer</a>
+                            Lukas Bode</a>
                         </div>
                         
                         
@@ -83,14 +83,19 @@
                     
                     
                         
-                        <a  href="https://www.tuwien.at/en/"  target="_blank">TU Wien</a><a> </a>
+                        <a  href="https://www.tuwien.at/en/"  target="_blank">TU Wien</a><a>, </a>
+                        
+                        
+                    
+                        
+                        <a  href="https://tech.facebook.com/reality-labs/"  target="_blank">Meta Reality Labs</a><a> </a>
                         
                         
                     
                 </div>
                 <div class="conftext">
                     
-                    <a  href="https://egsr2026.inria.fr"  target="_blank">Eurographics Symposium on Rendering 2026</a>
+                    <a  href="https://www.highperformancegraphics.org/2026/index.html"  target="_blank">High-Performance Graphics 2026</a>
                     
                 </div>
             </div>
@@ -100,7 +105,7 @@
                 
                     
                     
-                        <a href="https://diglib.eg.org/handle/10.1111/cgf70538" target="_blank" style="text-decoration: none;">
+                        <a href="https://dl.acm.org/doi/10.1145/3820015" target="_blank" style="text-decoration: none;">
                             <div class="resource-button" style="display: flex;">
                                 
                                     <img  class="iconMode"  src="/icons/article.svg" style="height: 18px; margin: auto 8px auto auto;"></img>
@@ -109,16 +114,7 @@
                             </div> 
                         </a>
                     
-                        <a href="https://github.com/m-schuetz/CuRast" target="_blank" style="text-decoration: none;">
-                            <div class="resource-button" style="display: flex;">
-                                
-                                    <img  class="iconMode"  src="/icons/github/light.svg" style="height: 18px; margin: auto 8px auto auto;"></img>
-                                
-                                <div style="margin: auto;">Code</div>
-                            </div> 
-                        </a>
-                    
-                        <a href="https://arxiv.org/abs/2604.21749" target="_blank" style="text-decoration: none;">
+                        <a href="https://arxiv.org/abs/2607.04230" target="_blank" style="text-decoration: none;">
                             <div class="resource-button" style="display: flex;">
                                 
                                     <img  src="/icons/arxiv.svg" style="height: 18px; margin: auto 8px auto auto;"></img>
@@ -131,20 +127,25 @@
             </div>
 
             <div class="paperPageContent">
-                <h2 id="abstract">Abstract</h2>
-<p>This paper presents a CUDA-based software rasterizer capable of rendering up to a billion unique triangles, or up to 4 billion instanced triangles, in real time at 60 fps on an RTX 5090. By specifically targeting dense, opaque meshes, our approach is able to outperform the native GPU rasterization pipeline in these scenarios. The resulting performance enables rapid loading and visualization of massive triangle datasets without requiring precomputed spatial acceleration or level-of-detail structures, and supports applications such as efficient editing of large-scale geometry. While the method is primarily designed for dense meshes that generate pixel-sized triangles, we additionally introduce a three-stage pipeline to handle larger primitives.</p>
+                <p class="smalltext" style="color: var(--red-color) !important; text-align: center;">Please prefer the arXiv preprint, as Figure 5 in the journal release is broken!</p>
+<h2 id="abstract">Abstract</h2>
+<p>In this work we propose an efficient deferred software rasterization pipeline for real-time rendering of strand-based hair using hair meshes. Hair plays a crucial role in creating expressive 3D characters, yet strand-based approaches are often restricted to high-end hardware and typically applied to only a small number of hero characters. Hair meshes have proven to be an efficient representation capable of handling a wide variety of groom styles, but existing mesh shader-based implementations still suffer from significant bottlenecks. In this work, we address these limitations with a software rasterization approach that improves performance and compatibility. Our method enables efficient far-field strand-based hair rendering—even at a single sample per pixel—by combining deferred shading with a strand filtering and reconstruction step, while requiring only minimal hardware support. To further enhance scalability, we introduce a level-of-detail (LOD) scheme that adapts hair representation and shading complexity based on viewing distance and screen-space coverage, reducing computational cost further while preserving visual fidelity. To the best of our knowledge, this is the first approach to achieve this combination of efficiency, flexibility, scalability, and broad hardware compatibility.</p>
 <h3 id="bibtex">BibTeX</h3>
 <div class="citebox">
 <pre class="smalltext" style="margin: 0px; text-align: left; white-space: pre-wrap;  color: var(--text-color) !important;">
-@article{Schuetz2026CuRast,
-            author = {Schütz, Markus and Lipp, Lukas and Kristmann, Elias and Wimmer, Michael},
+@article{Lipp2026SwrHair,
+            author = {Lipp, Lukas and Jarabo, Adrian and Wimmer, Michael and Bode, Lukas},
             title = {High-Performance Real-Time Implicit Strand-Based Hair Rendering via Software Rasterization},
-            journal = {Computer Graphics Forum},
+            journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+            volume = {9},
+            number = {4},
             year = {2026},
-            doi = {10.1111/cgf.70538}
+            month = {jun},
+            doi = {10.1145/3820015}
 }
 </pre>
 </div>
+
             </div>
         </div>
     </body>
